@@ -1,0 +1,8 @@
+- name: Ansible RPM check
+  hosts: web
+  remote_user: root
+  tasks:
+  - name: rpm check
+    package:
+      name: dstat
+      state: present
