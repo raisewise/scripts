@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo -e "Tanzu Namespace : \c "
 read -a NAMESPACE
