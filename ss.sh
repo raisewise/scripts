@@ -8,5 +8,3 @@ for i in `cat /root/nodelist`
 	   ssh $i $A
 done
 printf -- '-%.0s' $(seq `tput cols`); echo ""
-
-test
