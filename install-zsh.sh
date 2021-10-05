@@ -9,3 +9,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 echo -e 'source .oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source .oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh' >> $PWD/.zshrc
+
+sudo apt install -y zsh
+sudo chsh -s /usr/bin/zsh
+sudo echo ‘Y’ | sudo sh -c "$(sudo curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo mv .oh-my-zsh/ /usr/local/src/
