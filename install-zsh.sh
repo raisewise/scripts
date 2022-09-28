@@ -7,9 +7,9 @@ OS=`cat /etc/os-release | grep ^ID= | awk -F"=" '{print $2}'`
 ZSH_CUSTOM=~/.oh-my-zsh/custom
 
 # Package manager
-if [ "$OS" = ubuntu ]
+if [ $OS = "ubuntu" ] ; then
     PKG=apt
-then
+else
     PKG=yum
 fi
 #echo $PKG
