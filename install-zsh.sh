@@ -20,7 +20,7 @@ sudo echo /usr/bin/zsh >> /etc/shells
 sudo chsh -s /usr/bin/zsh
 sudo echo ‘Y’ | sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' $PWD/.zshrc
-sudo sed -i -e '27 s/# //g' $PWD/.zshrc
+sudo sed -i -e '27 s/^# //g' $PWD/.zshrc
 sudo sed -i -e 's/#\ HIST_STAMPS=\"mm\/dd\/yyyy\"/HIST_STAMPS=\"%m\/%d\/%y\ %T"/g' $PWD/.zshrc
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
